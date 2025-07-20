@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task_1</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="inputsContent">
+				<div class="content">
+					<label for="tagInput"> TagName : </label>
+					<input
+						type="text"
+						name="tagName"
+						id="tagInput"
+						placeholder="Enter tag name like div or p"
+					/>
+				</div>
+				<div class="content">
+					<label for="classInput"> className : </label>
+					<input
+						type="text"
+						name="className"
+						id="classInput"
+						placeholder="Enter class name like content or output"
+					/>
+				</div>
+				<div class="content">
+					<label for="idInput"> Id : </label>
+					<input
+						type="text"
+						name="ID"
+						id="idInput"
+						placeholder="Enter valid Id Attribute"
+					/>
+				</div>
+				<div class="content">
+					<label for="nameInput"> Name : </label>
+					<input
+						type="text"
+						name="Name"
+						id="nameInput"
+						placeholder="Enter valid Name Attribute "
+					/>
+				</div>
+				<button class="btn" onclick="numbersElement()">Show Result</button>
+			</div>
+			<div class="output">
+				<h2>Number of div : <span id="divSpan"></span></h2>
+				<h2>Class Content : <span id="classSpan"></span></h2>
+				<h2>Id : <span id="idSpan"></span></h2>
+				<h2>Name : <span id="nameSpan"></span></h2>
+			</div>
+		</div>
+		<script src="Task_1.js"></script>
+	</body>
+</html>
