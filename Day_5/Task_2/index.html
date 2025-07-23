@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task_2 - Slider</title>
+		<style>
+			.container {
+				text-align: center;
+			}
+			.imagesContain {
+				width: 400px;
+				height: 400px;
+				margin: auto;
+			}
+			.imagesContain img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: none;
+				margin: auto;
+				border-radius: 10px;
+			}
+			.btn {
+				padding: 0.7rem 2rem;
+				font-weight: bold;
+				background-color: #6b6363;
+				color: #eee;
+				border: 1px solid #6b6363;
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				-ms-border-radius: 10px;
+				-o-border-radius: 10px;
+				cursor: pointer;
+				margin-top: 1rem;
+			}
+
+			.btn:hover {
+				background-color: #eee;
+				color: #6b6363;
+			}
+			p {
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="imagesContain">
+				<img
+					src="../images/cat.webp"
+					class="image"
+					alt="image_1"
+					id="image_1"
+				/>
+				<img
+					src="../images/dolphin.jpg"
+					class="image"
+					alt="image_2"
+					id="image_2"
+				/>
+				<img
+					src="../images/Eagle.jpg"
+					class="image"
+					alt="image_3"
+					id="image_3"
+				/>
+				<img
+					src="../images/Parrot.jpeg"
+					class="image"
+					alt="image_4"
+					id="image_4"
+				/>
+			</div>
+			<p id="altText"></p>
+			<button class="btn prev" id="prev" onclick="prevImage()">Previous</button>
+			<button class="btn next" id="next" onclick="nextImage()">Next</button>
+			<br />
+			<button class="btn play" id="play" onclick="playImages()">Play</button>
+			<button class="btn stop" id="stop" onclick="stopImages()">Stop</button>
+		</div>
+		<script src="Task_2.js"></script>
+	</body>
+</html>

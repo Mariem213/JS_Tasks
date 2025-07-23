@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task_4 - Form Validation</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h2>Registration Form</h2>
+			<form id="myForm">
+				<div class="inputContainer">
+					<!-- <label for="name"> Name</label> -->
+					<input type="text" id="name" placeholder="Enter Your Name" />
+					<span class="error" id="nameError"></span>
+				</div>
+
+				<div class="inputContainer">
+					<!-- <label for="email"> Email</label> -->
+					<input type="text" id="email" placeholder="Enter Your Email" />
+					<span class="error" id="emailError"></span>
+				</div>
+
+				<div class="inputContainer">
+					<!-- <label for="password"> Password</label> -->
+					<input
+						type="password"
+						id="password"
+						placeholder="Enter Your Password"
+					/>
+					<span class="error" id="passwordError"></span>
+				</div>
+
+				<div class="inputContainer">
+					<!-- <label> Gender:</label> -->
+					<input type="radio" name="gender" value="male" id="male" />
+					<label for="male">Male</label>
+					<input type="radio" name="gender" value="female" id="female" />
+					<label for="female">Female</label>
+					<span class="error" id="genderError"></span>
+				</div>
+				<br />
+
+				<div class="inputContainer">
+					<label class="basic"> Sports:</label><br />
+					<input type="checkbox" name="sport" value="football" id="Football" />
+					<label for="Football">Football</label>
+					<input
+						type="checkbox"
+						name="sport"
+						value="basketball"
+						id="Basketball"
+					/>
+					<label for="Basketball">Basketball</label>
+					<input type="checkbox" name="sport" value="tennis" id="Tennis" />
+					<label for="Tennis">Tennis</label>
+					<span class="error" id="sportsError"></span>
+				</div>
+
+				<div class="inputContainer">
+					<label class="basic"> Country:</label>
+					<select id="country" class="SelectBtn">
+						<option value="">--Select--</option>
+						<option value="Egypt">Egypt</option>
+						<option value="USA">USA</option>
+						<option value="UK">UK</option>
+					</select>
+					<span class="error" id="countryError"></span>
+				</div>
+
+				<br /><br />
+				<button class="btn" type="submit">Submit</button>
+				<button class="btn" type="reset">Reset</button>
+			</form>
+		</div>
+
+		<script src="Task_4.js"></script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task_1 - Student Table</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="name">
+				<input type="text" id="studentName" placeholder="Enter Your Name" />
+				<br />
+				<span id="nameRequired"> Student Name is Required </span>
+				<span id="nameLength"> Name Length Must be greater than 3 </span>
+			</div>
+			<div class="age">
+				<input type="text" id="studentAge" placeholder="Enter Your Age" />
+				<br />
+				<span id="ageRequired"> Age is Required </span>
+				<span id="ageLimit"> Age Must be greater than 18 </span>
+			</div>
+
+			<button class="btn" id="addBtn" onclick="addData()">Add Student</button>
+
+			<table id="studentTable">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<script src="Task_1.js"></script>
+	</body>
+</html>

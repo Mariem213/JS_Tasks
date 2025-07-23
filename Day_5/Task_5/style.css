@@ -1,0 +1,58 @@
+body {
+	text-align: center;
+}
+
+.traffic-container {
+	margin: 2rem auto;
+	width: 10%;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.circle {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	background-color: lightgray;
+	margin: 2rem auto;
+}
+
+.btns {
+	margin: 1.5rem;
+}
+
+.btn,
+.SelectBtn {
+	padding: 1rem;
+	margin: 0.5rem;
+	border: none;
+	background-color: #ccc;
+	color: #2e2b2b;
+	font-size: 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	transition: 0.5s all ease-in-out;
+	-webkit-transition: 0.5s all ease-in-out;
+	-moz-transition: 0.5s all ease-in-out;
+	-ms-transition: 0.5s all ease-in-out;
+	-o-transition: 0.5s all ease-in-out;
+}
+
+.btn:hover {
+	background-color: #2e2b2b;
+	color: #ccc;
+}
+
+#message {
+	font-size: 2.5rem;
+	margin-top: 2.5rem;
+}
