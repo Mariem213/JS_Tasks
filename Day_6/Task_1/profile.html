@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile</title>
+	</head>
+	<body>
+		<script src="cookieLib.js"></script>
+		<script>
+			var name = getCookie("name");
+			var gender = getCookie("gender");
+			var color = getCookie("color");
+			var visits = getCookie("visits");
+
+			if (!visits) {
+				visits = 1;
+			} else {
+				visits = parseInt(visits) + 1;
+			}
+			setCookie("visits", visits, 7);
+
+			var imgSrc = gender === "male" ? "1.jpg" : "2.jpg";
+
+			document.write(`
+            <h2 style="color: ${color}">Welcome, ${name}</h2>
+            <img src="${imgSrc}" width="150">
+            <p style="color: ${color}">Number of visits: ${visits}</p>`);
+		</script>
+	</body>
+</html>
